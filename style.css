@@ -7,6 +7,11 @@
   font-family: "Roboto", sans-serif;
 }
 
+nav {
+    height: 80px;
+    display: flex;
+}
+
 .navbar {
   display: flex;
   align-items: center;
@@ -15,10 +20,14 @@
   font-weight: 600;
 }
 
-.navbar .links {
+.nav__link {
   display: flex;
   width: 100%;
   max-width: 430px;
+  margin-left: 16px;
+  text-decoration: none;
+  font-size: 20px;
+  color: #7342d6;
 }
 
 .navbar .logo {
@@ -34,4 +43,25 @@
   max-width: 1200px;
   display: flex;
   flex-wrap: wrap;
+}
+
+.nav__container {
+    width: 100%;
+    max-width: 1200px; 
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+    padding: 0 24px;
+}
+
+ul {
+    display: flex;
+}
+
+li {
+    list-style-type: none;
+}
+
+.logo {
+    width: 200px;
 }
