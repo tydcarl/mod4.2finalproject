@@ -73,6 +73,10 @@ li {
     width: 200px;
 }
 
+.link {
+    margin-left: 24px;
+}
+
 .links {
     justify-content: space-between;
 }
