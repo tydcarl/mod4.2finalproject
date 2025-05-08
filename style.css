@@ -33,7 +33,7 @@ nav {
   font-size: 20px;
   color: #7342d6;
   justify-content: space-between;
-  padding: 30px 30px 30px 30px;
+  
 }
 
 .navbar .logo {
@@ -71,4 +71,8 @@ li {
 
 .logo {
     width: 200px;
+}
+
+.links {
+    justify-content: space-between;
 }
