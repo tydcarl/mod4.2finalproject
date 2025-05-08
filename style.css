@@ -24,11 +24,11 @@ nav {
   align-items: center;
 }
 
-.nav__link {
+.nav__links {
   display: flex;
   width: 100%;
   max-width: 430px;
-  margin-left: 16px;
+  margin-left: 100px;
   text-decoration: none;
   font-size: 20px;
   color: #7342d6;
