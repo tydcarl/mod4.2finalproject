@@ -41,6 +41,21 @@ li {
     color: rgba(93, 12, 152, 0.952);
     font-weight: bold;
     padding: 8px;
+
     
     
 }
+
+ .nav__link__btn {
+            background-color: purple;   /* Gives a purple background */
+            color: white;               /* Makes the text white */
+            border: none;               /* Removes the default border */
+            border-radius: 15px;       /* Makes the button rounded */
+            padding: 10px 20px;        /* Adds some space inside the button */
+            cursor: pointer;            /* Changes the cursor to a pointer */
+            font-size: 16px;           /* Adjusts the font size */
+        }
+
+        .nav__link__btn:hover {
+            background-color: darkviolet; /* Changes color when hovering over it */
+        }
