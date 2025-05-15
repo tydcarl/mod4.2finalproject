@@ -76,21 +76,43 @@ li {
     line-height: 1.25;
     color: rgba(93, 12, 152, 0.952);
     text-align: center;
+    margin-bottom: 30px;
+    font-size: 48px;
  }    
+
+ h2 {
+    margin-bottom: 30px;
+ }
 
  #landing-page {
    justify-content: center;
  }
  
  .content__wrapper {
-    margin: 0 auto;
+    display: flex;
+    flex-direction: column  ;
+    margin:  64px;
     width: 100%;
     max-width: 1200px;
 justify-content: center;
  }
 
  div {
-    display: block;
+    display: flex;
     justify-content: center;
     align-items: center;
+ }
+
+ .input__wrapper {
+    width: 100%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+ }
+
+ #searchbar {
+    border-radius: 20px;
+    height: 70px;
+    width: 100%;
+    border: 1px solid;
  }
