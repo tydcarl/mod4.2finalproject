@@ -115,4 +115,16 @@ justify-content: center;
     height: 70px;
     width: 100%;
     border: 1px solid;
+    font-size: larger;
+    padding: 0 32px;
+ }
+
+ #search__btn {
+    color: white;
+    width: 200px;
+    height: 70px;
+    margin-left: 20px;
+    font-size: 40px;
+    border-radius: 20px;
+    background-color: rgb(117, 13, 197)
  }
