@@ -128,7 +128,7 @@ div {
 #searchbar {
   border-radius: 20px;
   height: 70px;
-  width: 100%;
+  width: 60%;
   border: 1px solid;
   font-size: larger;
   padding: 0 32px;
@@ -136,7 +136,7 @@ div {
 
 #search__btn {
   color: white;
-  width: 200px;
+  width: 10%;
   height: 70px;
   margin-left: 20px;
   font-size: 40px;
@@ -159,12 +159,15 @@ div {
 }
 
 .fancy__photo {
-  position: relative;
+  position: absolute;
   display: flex;
+  max-width: max-content;
+  vertical-align: middle;
 }
 
 .film-photo {
   box-shadow: 0px 0px 100px 5px rgba(93, 12, 152, 0.952);
+  width: 100%;
 }
 
 @keyframes spin {
