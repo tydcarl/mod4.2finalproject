@@ -159,15 +159,15 @@ div {
 }
 
 .fancy__photo {
-  position: absolute;
+  justify-content: center;
   display: flex;
-  max-width: max-content;
-  vertical-align: middle;
-}
+align-items: center;
+height: 100vh;}
 
 .film-photo {
   box-shadow: 0px 0px 100px 5px rgba(93, 12, 152, 0.952);
-  width: 100%;
+  max-width: 100%;
+  height: auto;
 }
 
 @keyframes spin {
