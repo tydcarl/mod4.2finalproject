@@ -5,55 +5,80 @@
     <meta name="viewport" />
     <title>Document</title>
     <link rel="stylesheet" href="style.css" />
-    <script src="https://kit.fontawesome.com/8bc047a08d.js" crossorigin="anonymous"></script>
+    <script
+      src="https://kit.fontawesome.com/8bc047a08d.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body>
     <section>
-        <nav>
-            <header>
-            <div class="nav__container">
+      <nav>
+        <header>
+          <div class="nav__container">
+            <img
+              class="logo"
+              src="/blinker-icon.4f9b2663.png"
+              alt="blinker logo"
+              class="logo"
+            />
 
-                <img class="logo"
-                src="/blinker-icon.4f9b2663.png"
-                alt="blinker logo"
-                class="logo">
-           
-        <ul class="nav__links">
-            <li><a href="#" class="nav__link">Home</a></li>
-            <li><a href="#" class="nav__link">Add Your Film </a></li>
-            <li>
-            <button class="nav__link__btn" onclick="location.href='#'">Contact</button>
-            </li> 
-
-
-        </ul>
-    </div>
-         </nav>
+            <ul class="nav__links">
+              <li><a href="#" class="nav__link">Home</a></li>
+              <li><a href="#" class="nav__link">Add Your Film </a></li>
+              <li>
+                <button class="nav__link__btn" onclick="location.href='#'">
+                  Contact
+                </button>
+              </li>
+            </ul>
+          </div>
         </header>
+      </nav>
     </section>
-    <section id ="landing-page">
-        <div class="content__wrapper">
-            <div>
-            <h1>America's Most Extensive Internet Movie Database </h1>
+    <section id="landing-page">
+      <div class="content__wrapper">
+        <div>
+          <h1>America's Most Extensive Internet Movie Database</h1>
+        </div>
+        <div>
+          <h2>
+            Find all the movies that have ever
+            <span class="purple"> existed</span>
+          </h2>
+        </div>
+        <div class="input__wrapper">
+          <input
+            id="searchbar"
+            type="text"
+            name="query"
+            placeholder="Title, Actor, Director or Theme"
+            required
+          />
+          <button id="search__btn" type="submit">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <div id="spinner__loading" class="spinner__loading">
+              <i class="fa-solid fa-spinner"></i>
             </div>
-            <div>
-            <h2>Find all the movies that have ever <span class="purple"> existed</span></h2></div>
-            <div class="input__wrapper ">
-    <input id="searchbar" type="text" name="query" placeholder="Title, Actor, Director or Theme" required>
-    <button id="search__btn" type="submit">
-        <i class="fa-solid fa-magnifying-glass"></i> 
-        <div id="spinner__loading" class="spinner__loading">
-            <i class="fa-solid fa-spinner"></i>
+          </button>
         </div>
-    </button>
-</div>
-        </div>
-    <div class="fancy__photo">
-
-       <img src="https://d26oc3sg82pgk3.cloudfront.net/files/media/edit/image/56226/article_full%401x.jpg" jsaction="" class="film-photo"  alt="">
-        </div>
+      </div>
+      <div class="fancy__photo">
+        <img
+          src="https://d26oc3sg82pgk3.cloudfront.net/files/media/edit/image/56226/article_full%401x.jpg"
+          jsaction=""
+          class="film-photo"
+          alt=""
+        />
+      </div>
     </section>
 
-     <script src="index.js"></script>
+    <section id="movie-results-section">
+      <div class="container">
+        <h2>Search Results</h2>
+        <div id="movie-results" class="movie-grid"></div>
+      </div>
+    </section>
 
- 
+    <script src="index.js"></script>
+  </body>
+</html>
