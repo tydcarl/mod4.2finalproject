@@ -172,13 +172,20 @@ flex-wrap: wrap;
     justify-content: space-around;
     display: flex;
     align-items: center;
-    padding: 15px
+    padding: 15px;
+    gap: 30px;
 }
 
 .movie-card {
     flex-direction: column;
     padding: 50px;
     flex-wrap: wrap;
+}
+
+.search-results {
+   
+display: flex;
+justify-content: center;
 }
 
 @keyframes rotate {
