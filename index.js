@@ -21,5 +21,11 @@ async function main() {
 }
 
 main();
-const spinnerLoading = document.querySelector('spinner__loading')
-spinnerLoading.Style.display = "block"
+function handleSearchIcon() {
+
+
+const spinnerLoading = document.querySelector('.spinner__loading')
+const searchIcon = document.querySelector('.fa-magnifying-glass')
+spinnerLoading.style.display = "block"
+searchIcon.style.display = 'none'
+}
