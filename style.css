@@ -164,6 +164,22 @@ height: 100vh;}
   height: auto;
 }
 
+.movie-grid {
+flex-wrap: wrap;
+}
+
+.container__search {
+    justify-content: space-between;
+    display: flex;
+    padding: 50px;
+}
+
+.movie-card {
+    flex-direction: column;
+    padding: 50px;
+    flex-wrap: wrap;
+}
+
 @keyframes rotate {
     0% {transform: rotate(0);}
     100% { transform: rotate(360deg);}
