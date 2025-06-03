@@ -168,10 +168,11 @@ height: 100vh;}
 flex-wrap: wrap;
 }
 
-.container__search {
-    justify-content: space-between;
+.movie-info {
+    justify-content: space-around;
     display: flex;
-    padding: 50px;
+    align-items: center;
+    padding: 15px
 }
 
 .movie-card {
