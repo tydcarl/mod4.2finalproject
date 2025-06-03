@@ -22,4 +22,4 @@ async function main() {
 
 main();
 const spinnerLoading = document.querySelector('spinner__loading')
-spinnerLoading.Style.display = "onclick"
+spinnerLoading.Style.display = "block"
