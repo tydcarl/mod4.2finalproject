@@ -1,31 +1,61 @@
-const movieResults = document.getElementById("movie-results");
+//GRABBING ELEMENTS FROM HTML
 
-async function main() {
-  const users = await fetch("https://www.omdbapi.com/?apikey=485a0dbd&s=fast");
-  const usersData = await users.json();
-  console.log(usersData.Search);
+const moviesWrapper = document.querySelector('.movie-grid')
+const searchName = document.querySelector('.searchName')
 
-  movieResults.innerHTML = usersData.Search.map((movie) => {
-    return `
-        <div class="movie-card">
-          <div class="movie-poster">
-            <img src="${movie.Poster}" alt="${movie.Title} Poster" onerror="this.onerror=null;this.src='https://placehold.co/200x300/cccccc/333333?text=No+Image';">
-          </div>
-          <div class="movie-info">
-            <h3>${movie.Title}</h3>
-            <p>${movie.Year}</p>
-          </div>
-        </div>
-        `;
-  });
+
+
+
+//GLOBAL MOVIES VARIABLE 
+
+let currentMovies = [];
+
+//HANDLING THE SEARCH
+
+
+function searchChange(event) {
+  renderMovies(event.target.value);
+  searchName.innerHTML = event.target.value;
+}
+// REDNERING MOVIES CALLING API
+
+async function renderMovies (searchTerm) {
+  const response = await fetch(`https://www.omdbapi.com/?apikey=485a0dbd&s=${searchTerm}`)
+  const data = await response.json()
+  currentMovies = data.Search
+  displayMovies(currentMovies)
+ 
 }
 
-main();
-function handleSearchIcon() {
+// DISPLAYING MOVIES 
+function displayMovies(movieList) {
+  moviesWrapper.innerHTML = movieList
+    .slice(0, 6)
+    .map((movie) => {
+      return `
+    <div class="movie">
+    <img src=${movie.Poster} alt="" />
+    <h2>${movie.Title}</h2>
+    <h4>${movie.Year}</h4>
+    <button>Learn More</button>
+    </div>
+    `;
+    })
+    .join("");
+}
 
+//SORTING MOVIES 
 
-const spinnerLoading = document.querySelector('.spinner__loading')
-const searchIcon = document.querySelector('.fa-magnifying-glass')
-spinnerLoading.style.display = "block"
-searchIcon.style.display = 'none'
+function sortChange(event) {
+ const sortOption = event.target.value
+
+ let sortedMovies =  [...currentMovies]
+
+ if (sortOption === "newest") {
+sortedMovies.sort((a, b) => b.Year - a.Year)
+ } else if (sortOption === "oldest" ){
+  sortedMovies.sort((a, b) => a.Year - b.Year);
+ }
+
+ displayMovies(sortedMovies);
 }

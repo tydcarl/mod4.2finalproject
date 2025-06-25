@@ -52,6 +52,7 @@
             type="text"
             name="query"
             placeholder="Title, Actor, Director or Theme"
+            onchange="searchChange(event)"
             required
           />
           <button onclick='handleSearchIcon()' id="search__btn" type="submit">
@@ -74,6 +75,13 @@
 
     <section id="movie-results-section">
          <h2 class="search-results">Search Results</h2>
+         <div class="price-filter flex flex-col">
+          <select name="movieSort" id="movieSort" onchange="sortChange(event)">
+            <option disabled selected value="">Sort by Year</option> 
+            <option value="newest">Newest to Oldest</option>
+            <option value="oldest">Oldest to Newest</option>
+          </select>
+          </div>
       <div class="container__search">
        
         <div id="movie-results" class="movie-grid"></div>
