@@ -301,7 +301,11 @@ div {
   }
 }
 
-@media (max-width: 414px) {
+
+@media (max-width: 488px) {
+  .hamburger {
+    display: block;
+  }
   .nav__links {
     display: none; /* Hide links by default */
     flex-direction: column; /* Stack links vertically */
