@@ -22,14 +22,16 @@ async function renderMovies(searchTerm) {
   moviesWrapper.classList += ' movies__loading'
   const data = await response.json();
   moviesWrapper.classList.remove(" movies__loading");
-const searchIcon = document.querySelector(".fa-magnifying-glass");
-const spinner = document.querySelector("spinner__loading");
-
-spinner.style.display = "block";
-searchIcon.style.display = "none";
-
   currentMovies = data.Search;
   displayMovies(currentMovies);
+}
+
+function handleSearchIcon() {
+  const searchIcon = document.querySelector(".fa-magnifying-glass");
+  const spinner = document.querySelector("spinner__loading");
+
+  spinner.style.display = "block";
+  searchIcon.style.display = "none";
 }
 
 // DISPLAYING MOVIES
