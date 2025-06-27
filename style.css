@@ -176,7 +176,7 @@ div {
   justify-content: center;
   display: flex;
   align-items: center;
-  height: 100vh;
+  height: 60vh;
 }
 
 .film-photo {
@@ -255,7 +255,7 @@ div {
 .search-results {
   display: flex;
   justify-content: center;
-  margin-top: 40px; /* Add some spacing */
+  margin-top: 18px; /* Add some spacing */
   font-size: 2em;
   color: rgba(93, 12, 152, 0.952);
 }
@@ -276,4 +276,18 @@ div {
 .container__search {
   display: flex;
   justify-content: center; /* Center the movie grid container */
+}
+
+@media (max-width: 720px) {
+  .nav__container {
+    flex-direction: column;
+  }
+  .nav__links {
+    margin-top: 18px;
+  }
+
+  .content__wrapper {
+    margin-left: 32px;
+    margin-top: 24px;
+  }
 }
