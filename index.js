@@ -22,6 +22,8 @@ async function renderMovies(searchTerm) {
   moviesWrapper.classList += ' movies__loading'
   const data = await response.json();
   moviesWrapper.classList.remove(" movies__loading");
+const searchIcon = document.querySelector(".fa-magnifying-glass");
+const spinner = document.querySelector("spinner__loading");
 
   currentMovies = data.Search;
   displayMovies(currentMovies);

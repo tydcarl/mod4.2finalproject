@@ -146,6 +146,7 @@ div {
 
 .spinner__loading {
 animation: rotate 600ms infinite linear;
+display: none;
 
 }
 
