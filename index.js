@@ -96,3 +96,10 @@ document.addEventListener("DOMContentLoaded", () => {
   renderMovies("Avengers"); // Load some default movies
   searchResultsHeading.innerHTML = `Search Results for: Avengers`; // Set initial heading
 });
+
+//HAMBURGER
+
+document.getElementById("hamburger").addEventListener("click", function () {
+  const navLinks = document.getElementById("navLinks");
+  navLinks.classList.toggle("active"); // Toggle the 'active' class
+});

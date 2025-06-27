@@ -145,6 +145,15 @@ div {
   justify-content: center;
 }
 
+.hamburger {
+  display: none; /* Hidden by default */
+  font-size: 30px;
+  color: white;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
 /* Spinner and search icon within the button */
 #search__btn .fa-magnifying-glass {
   display: block; /* Initially show the search icon */
@@ -289,5 +298,31 @@ div {
   .content__wrapper {
     margin-left: 32px;
     margin-top: 24px;
+  }
+}
+
+@media (max-width: 414px) {
+  .nav__links {
+    display: none; /* Hide links by default */
+    flex-direction: column; /* Stack links vertically */
+    position: absolute;
+    top: 60px; /* Adjust based on your layout */
+    left: 0;
+    right: 0;
+    background-color: #333;
+  }
+  .nav__links.active {
+    display: flex; /* Show links when active */
+  }
+
+  .hamburger {
+    display: block; /* Show hamburger button */
+  }
+}
+
+
+@media (max-width: 320px) {
+  .nav__link {
+      font-size: 14px; /* Smaller font size for smaller screens */
   }
 }
