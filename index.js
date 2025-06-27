@@ -25,6 +25,9 @@ async function renderMovies(searchTerm) {
 const searchIcon = document.querySelector(".fa-magnifying-glass");
 const spinner = document.querySelector("spinner__loading");
 
+spinner.style.display = "block";
+searchIcon.style.display = "none";
+
   currentMovies = data.Search;
   displayMovies(currentMovies);
 }
