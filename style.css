@@ -146,7 +146,15 @@ div {
 
 .spinner__loading {
 animation: rotate 600ms infinite linear;
-display: none;
+
+}
+
+.movies__loading--spinner {
+  display: none !important; 
+}
+
+.spinner__loading .movies__loading--spinner {
+  display: block !important;
 }
 
 #search__btn:hover {
