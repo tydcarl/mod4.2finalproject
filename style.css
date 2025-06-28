@@ -303,9 +303,16 @@ div {
 
 
 @media (max-width: 488px) {
+
+  
   .hamburger {
-    display: block;
+    display: none;
+    font-size: 30px;
+    color: black;
+    border: none;
+    cursor: pointer;
   }
+
   .nav__links {
     display: none; /* Hide links by default */
     flex-direction: column; /* Stack links vertically */
@@ -319,9 +326,18 @@ div {
     display: flex; /* Show links when active */
   }
 
-  .hamburger {
-    display: block; /* Show hamburger button */
+  h2 {
+    margin-left: 24px;
   }
+
+  .search-results {
+    margin-left: 24px;
+  }
+
+  .fancy__photo {
+    max-width: 75%
+  }
+
 }
 
 
