@@ -304,9 +304,17 @@ div {
 
 @media (max-width: 488px) {
 
+  .nav__container {
+    flex-direction: row;
+  }
+
+  .logo {
+    margin-left: 16px;
+  }
+
   
   .hamburger {
-    display: none;
+    display: block;
     font-size: 30px;
     color: black;
     border: none;
@@ -335,7 +343,48 @@ div {
   }
 
   .fancy__photo {
-    max-width: 75%
+    max-width: 75%;
+    margin-left: 64px;
+    justify-content: center;
+  }
+
+}
+
+@media (max-width: 442px) {
+
+  
+  .hamburger {
+    display: block;
+    font-size: 30px;
+    color: black;
+    border: none;
+    cursor: pointer;
+  }
+
+  .nav__links {
+    display: none; /* Hide links by default */
+    flex-direction: column; /* Stack links vertically */
+    position: absolute;
+    top: 60px; /* Adjust based on your layout */
+    left: 0;
+    right: 0;
+    background-color: #333;
+  }
+  .nav__links.active {
+    display: flex; /* Show links when active */
+  }
+
+  h2 {
+    margin-left: 24px;
+  }
+
+  .search-results {
+    margin-left: 24px;
+  }
+
+  .fancy__photo {
+    max-width: 75%;
+    margin-left: 64px;
   }
 
 }
@@ -345,4 +394,18 @@ div {
   .nav__link {
       font-size: 14px; /* Smaller font size for smaller screens */
   }
+
+
+.hamburger {
+  display: block;
+  font-size: 30px;
+  color: black;
+  border: none;
+  cursor: pointer;
+}
+
+.fancy__photo {
+  max-width: 75%;
+  margin-left: 48px
+}
 }
